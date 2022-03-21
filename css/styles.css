@@ -72,7 +72,7 @@ nav .office-logo {
 }
 
 .scrolled-d {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: black !important;
   left: 0 !important;
   opacity: 100 !important;
 }
@@ -164,6 +164,16 @@ nav.navbar .nav-item a:hover {
   width: 100%;
 }
 
+.hero .contact-btn {
+  background: black;
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  bottom: 60px;
+  position: relative;
+  text-transform: uppercase;
+}
+
 .hero-gallery img {
   height: 90vh;
   width: 100%;
@@ -193,6 +203,8 @@ nav.navbar .nav-item a:hover {
   margin: 0;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   margin-top: -5px;
+  bottom: 12px;
+  position: relative;
 }
 
 .hero-info .listing-price {
@@ -217,6 +229,34 @@ nav.navbar .nav-item a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .hero .contact-btn {
+    font-size: 12px;
+    bottom: 50px;
+  }
+
+  .hero-info {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .nav-item {
+    opacity: 1;
+    left: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    left: 0;
+    opacity: 1;
+  }
+
+  .nav-item#featured {
+    padding-left: 0.5em;
+    width: 200px;
+    background: black;
+    margin-left: 0.5em;
+    left: 0;
+  }
+
   .agent .office-logo {
     margin-top: 0 !important;
   }
@@ -749,7 +789,6 @@ section.gallery img {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  margin-bottom: 4em;
   margin-right: 30px;
   flex-wrap: wrap;
 }
@@ -812,15 +851,11 @@ section.gallery img {
   min-width: 350px;
   width: 100%;
 }
-.share .office-logo {
-  background-image: url("../assets/FakeOfficeLogo_RealEstate-01.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 200px;
-  margin-top: -25px;
+.share .office-logo img {
+  max-width: 300px;
   width: 100%;
-  background-position: center;
+  padding: 1em;
+  margin: 0 auto;
 }
 .share .social_icon {
   margin-top: -62px;
@@ -5250,6 +5285,11 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+  border-color: transparent;
 }
 
 .nav-link {
