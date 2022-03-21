@@ -228,6 +228,25 @@ nav.navbar .nav-item a:hover {
   letter-spacing: 4px;
 }
 
+@media screen and (max-width: 990px) {
+  .nav-item {
+    opacity: 1;
+    left: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    left: 0;
+    opacity: 1;
+  }
+
+  .nav-item#featured {
+    padding-left: 0.5em;
+    width: 200px;
+    background: black;
+    margin-left: 0.5em;
+    left: 0;
+  }
+}
 @media screen and (max-width: 600px) {
   .hero .contact-btn {
     font-size: 12px;
