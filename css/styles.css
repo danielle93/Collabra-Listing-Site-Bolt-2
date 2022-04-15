@@ -159,6 +159,10 @@ nav.navbar .nav-item a:hover {
 }
 
 /* ================ HERO SECTION ================ */
+textarea {
+  resize: none !important;
+}
+
 .hero {
   position: relative;
   width: 100%;
